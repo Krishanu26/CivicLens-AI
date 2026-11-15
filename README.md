@@ -49,6 +49,12 @@ python -m uvicorn civiclens.api:app --reload
 
 The service is at `http://127.0.0.1:8000`; interactive API documentation is at `http://127.0.0.1:8000/docs`. By default, data is stored in `civiclens.db`. Set `CIVICLENS_DATABASE_URL` to use another SQLAlchemy database URL.
 
+## Example output
+
+Submit a road issue and then a differently worded report about the same issue in the same area. CivicLens suggests the `roads` category for both and marks the second as `possible_duplicate`, with a similarity score. The sample run is in [`sample-output.json`](sample-output.json).
+
+The project currently provides a REST API and its interactive docs, not a separate visual dashboard. The `/docs` page lets you try each endpoint in your browser.
+
 ## Try it
 
 ```powershell

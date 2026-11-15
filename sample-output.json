@@ -1,0 +1,30 @@
+{
+  "first_report": {
+    "id": "issue-1",
+    "description": "Large pothole on Oak Street near the school needs repair",
+    "area": "Northside",
+    "category": "roads",
+    "confidence": 0.9188,
+    "status": "open",
+    "duplicate_of": null,
+    "priority": 55,
+    "duplicates": []
+  },
+  "similar_report": {
+    "id": "issue-2",
+    "description": "Pothole on Oak Street near the school needs fixing",
+    "area": "Northside",
+    "category": "roads",
+    "confidence": 0.8495,
+    "status": "possible_duplicate",
+    "duplicate_of": "issue-1",
+    "priority": 55,
+    "duplicates": [
+      {
+        "issue_id": "issue-1",
+        "description": "Large pothole on Oak Street near the school needs repair",
+        "similarity": 0.6738
+      }
+    ]
+  }
+}
