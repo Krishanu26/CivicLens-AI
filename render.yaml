@@ -1,0 +1,17 @@
+databases:
+  - name: civiclens-db
+    databaseName: civiclens
+    user: civiclens
+    plan: basic-256mb
+
+services:
+  - type: web
+    name: civiclens-api
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    envVars:
+      - key: CIVICLENS_DATABASE_URL
+        fromDatabase:
+          name: civiclens-db
+          property: connectionString
